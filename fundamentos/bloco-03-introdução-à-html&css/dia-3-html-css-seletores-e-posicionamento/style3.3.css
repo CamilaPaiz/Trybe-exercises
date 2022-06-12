@@ -1,0 +1,7 @@
+div h3:hover{
+    border-width: 15px;
+    border-radius: 15px;
+}
+first h3{
+    color: blue;
+}
