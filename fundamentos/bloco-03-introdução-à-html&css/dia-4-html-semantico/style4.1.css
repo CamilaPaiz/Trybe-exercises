@@ -1,0 +1,53 @@
+#links {
+  text-align: center;
+  margin-top: 15px;
+  text-align: center;
+}
+a:hover {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  color: darkblue;
+}
+h2 {
+  text-align: center;
+  color: darkblue;
+  font-size: 25px;
+}
+h3 {
+  color: lightseagreen;
+  font-size: 25px;
+}
+h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+h5{
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+p {
+  text-align: left;
+}
+
+body {
+  background-color: azure;
+}
+ul li {
+  margin-left: 10px;
+}
+footer{
+    text-align: center
+}
+table {
+    border-style: dashed;
+    border-color: lightseagreen;
+}
+    aside,p.link-youtube {
+        text-align: right;
+        
+    }
