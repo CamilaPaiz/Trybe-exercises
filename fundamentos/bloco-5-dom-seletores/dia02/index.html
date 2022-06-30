@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="paiDoPai">
+        <section id="pai">
+          <section id="primeiroFilho"></section>
+          <section id="elementoOndeVoceEsta">
+            <section id="primeiroFilhoDoFilho"></section>
+            <section id="segundoEUltimoFilhoDoFilho"></section>
+          </section>
+          Atenção!
+          <section id="terceiroFilho"></section>
+          <section id="quartoEUltimoFilho"></section>
+        </section>
+      </main>
+      <script>
+        //exercicio fixacao-buscando elementos- f1
+        const elemento= document.getElementById('elementoOndeVoceEsta');
+        //exercicio fixacao f2
+        const pai = elemento.parentElement;
+        pai.style.color='green';
+        //exercicio fixacao f3
+        const primeirofilho= document.getElementById('primeiroFilhoDoFilho');
+        primeirofilho.innerText='Adicionando texto para exercicio de fixação,primeiro filho do filho';
+        //exercicio fixacao f4
+        const primeirofilho1= pai.firstElementChild;
+        //exercicio fixacao 5 f5
+        const primeirofilho1= elemento.previousElementSibling;
+        //exercicio fixacao 6 f6
+        const textatencao= elemento.nextSibling;
+        //exercicio fixacao 7 f7
+        const terceiroFilho = elemento.nextElementSibling;
+        //exercicio fixacao 8 f8
+        const terceiroFilho = pai.lastElementChild.previousElementSibling;
+
+        //exercicio fixacaof-criando elemento irmao para o elemenoOndeVoceEsta,cuja const chamei de elemento
+        const pai=document.getElementById('pai');
+        const novoIrmao= document.createElement('section');
+        novoIrmao.id='novoIrmao';
+        pai.appendChild(novoIrmao);
+
+        // exercicio 2f-criando um filho para 'elementoOndeVoceEsta'
+        const elementoOndeVoceEsta= document.getElementById('elementoOndeVoceEsta');
+        const filhoElementoOndeVoceEsta = document.createElement('section');
+        filhoElementoOndeVoceEsta.id ='filhoElementoOndeVoceEsta';
+        elementoOndeVoceEsta.appendChild(filhoElementoOndeVoceEsta);
+
+        //exercicio 3f- criando filho para primeirofilhoDofilho
+        const primeiroFilhoDoFilho=document.getElementById('primeiroFilhoDoFilho');
+        const filhoParaPrimeiroFilhoDoFilho=document.createElement('section');
+        filhoParaPrimeiroFilhoDoFilho.id='filhoParaPrimeiroFilhoDoFilho';
+        primeiroFilhoDoFilho.appendChild(filhoParaPrimeiroFilhoDoFilho);
+        
+        //exercicio4f- a partir do filho criado acima,acesse terceiroFilho
+        const terceiroFilho = filhoParaPrimeiroFilhoDoFilho.parentElement.parentElement.nextElementSibling;
+        console.log(terceirofilho);
+        //aqui faz o caminho chegar em primeiro filho atraves do pai,depois elementoondevoceesta para entao pedir o proximo elemento dele que sera o terceiro filho
+
+
+        //exercicio fixacao para remover elementos:
+        const pai= document.getElementById('pai');
+
+        for(let i= pai.childNodes.length -1;i >=0; i-=1){
+            const children= pai.childNodes[i];
+            if(children.id !== 'elementoOndeVoceEsta'){
+                children.remove();
+            }
+        }
+        const filho= document.getElementById('segundoEUltimoFilhoDoFilho');
+        segundoEUltimoFilhoDoFilho.remove();
+      </script>
+</body>
+
+</html>
+
