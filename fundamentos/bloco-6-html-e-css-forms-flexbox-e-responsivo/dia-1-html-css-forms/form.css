@@ -5,6 +5,9 @@ margin:0;
 }
 body{
     background-color: #B9F8D3;
+    background-image:url(./italia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 h1{
     text-align: center;
@@ -14,6 +17,7 @@ h1{
 h2{
     text-align: center;
     color:forestgreen;
+    
 }
 .allform{
     border: solid 2px;
@@ -21,7 +25,8 @@ h2{
     border-radius: 10px;
     padding: 40px;
     margin: 40px auto;
-   
+   color: white;
+   background-color: forestgreen;
 }
 #type-answer{
     text-align: center;
@@ -29,7 +34,7 @@ h2{
 }
 
 #complete-name{
-    
+  
     padding-bottom: 3px;
 }
 .cities{
@@ -42,13 +47,9 @@ h2{
 .pcity{
     text-align: center;
 }
-#type-answer{
-   margin-left: 25px;
-}
+
 .buttoncontainer{
-border:solid black 2px;
-width:38%;
-border-radius: 10px;
+
 margin: 40px auto;
 text-align:  center;
 padding: 10px;
@@ -58,4 +59,11 @@ padding: 10px;
    padding: 15px;
     border-radius: 10px;
     margin:  auto;
+    background-color: forestgreen;
+}
+
+p{
+    color:whitesmoke ;
+    text-decoration: underline;
+   
 }

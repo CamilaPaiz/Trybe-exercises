@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="form.css">
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="form.css">
+<!-- CSS only -->
     <title>Document</title>
 </head>
 <body>
@@ -13,21 +16,21 @@
         <h2>A Trybe leva você à Itália!!!</h2>
     </header>
     <main class="allform">
-        <img src="italia.jpg" alt="imagem-coliseu">
+        
     <section id="complete-info">
         
-            <div id="complete-name" >
+            <div id="complete-name" class="d-grid gap-3" >
                 <label for="name">Nome:</label required >
                 <input type="text" id="name" value="">  
-            </div>
             
-            <div id="complete-email">
+            
+            
                 <label for="email">Email:</label required >
                 <input type="email" id="email">
             </div>
             <br>
             <div class="cities">
-                <p>Selecione a cidade para a qual você deseja ir abaixo:</p>
+                <p>Selecione a cidade para a qual você deseja ir:</p>
                 <input type="radio" name="options" id="options"required checked>Roma
                 <input type="radio" name="options" id="options-2" required >Milão
                 <input type="radio" name="options" id="options-3"required >Bolonha
@@ -39,28 +42,28 @@
     <section id="answer">
         <p class="pcity">Escreva os lugares que gostaria de conhecer</p>
         
-        <textarea name="" id="type-answer" cols="30" rows="5"></textarea>
+        <textarea name="" id="type-answer" class="form-control" cols="30" rows="5"></textarea>
     </section>
 
     <section id="choose-date">
         <label for="date-option">Data:</label>
         <input type="date" name="date-option" id="date-option">
     </section>
-    <section id="agreeded">
+    <section id="agreeded" class="form-check form-switch" >
         <div id="agree-checked" >
             <label for=""></label>
-            <input type="checkbox" name="agree" id="agree">Concordo em enviar meu dados
+            <input type="checkbox" name="agree" id="agree" class="form-check-input" >Concordo em enviar meu dados
         </div>
         <div id="agree2">
             <label for=""></label>
-            <input type="checkbox" name="agree-receive" id="agree-receive">Aceita receber informações por email
+            <input type="checkbox" name="agree-receive" id="agree-receive" class="form-check-input" >Aceita receber informações por email
         </div>
         <br>
     </section>
     </main>
     <div class="buttoncontainer">
-<button type="submit" class="buttonform">Enviar</button>
-<button type="reset" class="buttonform">Apagar</button>
+<button type="submit" class="buttonform btn btn-primary" >Enviar</button>
+<button type="reset" class="buttonform btn btn-primary ">Apagar</button>
    
     </div>
 
