@@ -13,3 +13,4 @@ describe('Teste para validar a funcao sum',()=>{
         expect(() =>sum(4,'5')).toThrowError('parâmetro tem que ser número');
     })
 })
+
